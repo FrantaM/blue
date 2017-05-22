@@ -15,9 +15,13 @@ pipeline {
         )
       }
     }
-    stage('') {
+    stage('Test') {
       steps {
         echo '3'
+        waitUntil() {
+          echo '4'
+        }
+        
       }
     }
   }
