@@ -15,5 +15,10 @@ pipeline {
         )
       }
     }
+    stage('') {
+      steps {
+        echo '3'
+      }
+    }
   }
 }
